@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #80deea);
+            color: #333;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #004d40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #00796b;
+            color: #fff9c4;
+        }
+
+        .topnav a.active {
+            background-color: #388e3c;
+            color: #ffeb3b;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 10px;
+            background: url('https://via.placeholder.com/1200x300') no-repeat center center / cover;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #services {
+            background: #e0f2f1;
+        }
+
+        .service-item h3 {
+            color: #00796b;
+        }
+
+        .service-item p {
+            margin: 10px 0;
+        }
+
+        #testimonials {
+            background: #004d40;
+            color: white;
+        }
+
+        #testimonials p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        .service-item {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        #testimonials p {
+            animation: bounceIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.9);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="filling your travel form.html">Travel Form</a>
+        <a href="contacting us.html">Contact Us</a>
+        <a href="advertisement.html">Advertisement</a>
+        <a href="our packages.html">Our Packages</a>
+    </div>
+
+    <header>
+        <h1>Welcome to Eddie's Travel</h1>
+    </header>
+
+    <section>
+        <h2>Discover Our Offerings</h2>
+        <p>Explore our website to learn more about what we do and start planning your dream vacation today!</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Customized Travel Packages</h3>
+            <p>Experience tailor-made trips designed to suit your preferences.</p>
+        </div>
+        <div class="service-item">
+            <h3>Local Tours</h3>
+            <p>Discover the hidden gems of your destination with our expert guides.</p>
+        </div>
+        <div class="service-item">
+            <h3>Flight and Hotel Booking</h3>
+            <p>Seamless booking services to ensure a hassle-free journey.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"Eddie's Travel made my dream vacation a reality. Highly recommend!" - Jane Doe</p>
+        <p>"Professional service and amazing attention to detail." - John Smith</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Eddie's Travel. All rights reserved.
+    </footer>
+</body>
+
+</html>
